@@ -1,0 +1,2019 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5988841794982233191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5988841794982233187}
+  - component: {fileID: 5988841794982233188}
+  - component: {fileID: 1745070480171687003}
+  - component: {fileID: -2147205735781113129}
+  - component: {fileID: -5567522310578942870}
+  - component: {fileID: -2384673070612820983}
+  - component: {fileID: 6296857033074438919}
+  - component: {fileID: 941564587147436431}
+  - component: {fileID: 3751640099960716650}
+  - component: {fileID: 8548743441270031867}
+  - component: {fileID: 2496351846328909994}
+  - component: {fileID: 5213454080815742772}
+  - component: {fileID: 1464896279813000772}
+  - component: {fileID: 6606261651615868904}
+  - component: {fileID: 6665694811667999029}
+  - component: {fileID: 3011457850174132420}
+  - component: {fileID: 6878921149496071860}
+  - component: {fileID: 3622548328282817403}
+  m_Layer: 0
+  m_Name: MainManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5988841794982233187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5988841794982233191}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5988841794982233188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5988841794982233191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59fefa15397c091429f4a861ce8ed0b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  looks:
+  - name: Dark
+    info: Standard dark theme. Easy on the eyes, more pastel-y, overall goooood looking
+    ID: 0
+    cost: 0
+    iapTier: 0
+    isRainbow: 0
+    black: {r: 0, g: 0, b: 0, a: 1}
+    dark_grey: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 1}
+    grey: {r: 0.5283019, g: 0.5283019, b: 0.5283019, a: 1}
+    light_grey: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
+    white: {r: 1, g: 1, b: 1, a: 1}
+    text_main: {r: 1, g: 1, b: 1, a: 1}
+    text_accent: {r: 0.6924528, g: 0.886902, b: 1, a: 1}
+    text_background: {r: 0.645, g: 0.645, b: 0.645, a: 1}
+    UI_main: {r: 0.60784316, g: 0.8470589, b: 1, a: 1}
+    UI_accent: {r: 0.4292453, g: 0.6894393, b: 1, a: 1}
+    UI_background: {r: 0.397, g: 0.397, b: 0.397, a: 1}
+    background: {r: 0.15686275, g: 0.15686275, b: 0.15686275, a: 1}
+    color1: {r: 1, g: 0.33490568, b: 0.33490568, a: 1}
+    color2: {r: 1, g: 0.6924012, b: 0.33725488, a: 1}
+    color3: {r: 1, g: 0.9422126, b: 0.33725488, a: 1}
+    color4: {r: 0.33725488, g: 1, b: 0.5090459, a: 1}
+    color5: {r: 0.33725488, g: 0.7027255, b: 1, a: 1}
+    color6: {r: 0.6327072, g: 0.33725488, b: 1, a: 1}
+  - name: Ultra Dark Red
+    info: ULTRA dark theme with a red accent
+    ID: 0
+    cost: 0
+    iapTier: 0
+    isRainbow: 0
+    black: {r: 0, g: 0, b: 0, a: 1}
+    dark_grey: {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}
+    grey: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 1}
+    light_grey: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
+    white: {r: 1, g: 1, b: 1, a: 1}
+    text_main: {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 1}
+    text_accent: {r: 0.90099996, g: 0.4733364, b: 0.4733364, a: 1}
+    text_background: {r: 0.46226418, g: 0.46226418, b: 0.46226418, a: 1}
+    UI_main: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}
+    UI_accent: {r: 0.4716981, g: 0.1288113, b: 0.12637947, a: 1}
+    UI_background: {r: 0.23, g: 0.23, b: 0.23, a: 1}
+    background: {r: 0, g: 0, b: 0, a: 1}
+    color1: {r: 0.5754717, g: 0.13246706, b: 0.1521562, a: 1}
+    color2: {r: 0.5764706, g: 0.13333333, b: 0.29044887, a: 1}
+    color3: {r: 0.5764706, g: 0.13333333, b: 0.4084186, a: 1}
+    color4: {r: 0.5764706, g: 0.13333333, b: 0.49905863, a: 1}
+    color5: {r: 0.50503224, g: 0.13333333, b: 0.5764706, a: 1}
+    color6: {r: 0.41384804, g: 0.13333333, b: 0.5764706, a: 1}
+  - name: Ultra Dark Blue
+    info: ULTRA dark theme with a blue accent
+    ID: 0
+    cost: 0
+    iapTier: 0
+    isRainbow: 0
+    black: {r: 0, g: 0, b: 0, a: 1}
+    dark_grey: {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}
+    grey: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 1}
+    light_grey: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
+    white: {r: 1, g: 1, b: 1, a: 1}
+    text_main: {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 1}
+    text_accent: {r: 0.4067647, g: 0.6512573, b: 0.88235295, a: 1}
+    text_background: {r: 0.46226418, g: 0.46226418, b: 0.46226418, a: 1}
+    UI_main: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}
+    UI_accent: {r: 0.18723741, g: 0.41592178, b: 0.6320754, a: 1}
+    UI_background: {r: 0.23137257, g: 0.23137257, b: 0.23137257, a: 1}
+    background: {r: 0, g: 0, b: 0, a: 1}
+    color1: {r: 0.13333333, g: 0.1618443, b: 0.5764706, a: 1}
+    color2: {r: 0.13333333, g: 0.25776348, b: 0.5764706, a: 1}
+    color3: {r: 0.13333333, g: 0.34720838, b: 0.5764706, a: 1}
+    color4: {r: 0.13333333, g: 0.43320563, b: 0.5764706, a: 1}
+    color5: {r: 0.13333333, g: 0.5189725, b: 0.5764706, a: 1}
+    color6: {r: 0.13333333, g: 0.5764706, b: 0.555825, a: 1}
+  - name: 90s
+    info: Dark-based theme with a 90's era color palette. Very pastel-y and arguably...
+      ugly?
+    ID: 0
+    cost: 0
+    iapTier: 0
+    isRainbow: 0
+    black: {r: 0, g: 0, b: 0, a: 1}
+    dark_grey: {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}
+    grey: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 1}
+    light_grey: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
+    white: {r: 1, g: 1, b: 1, a: 1}
+    text_main: {r: 1, g: 1, b: 1, a: 1}
+    text_accent: {r: 1, g: 0.9803922, b: 0.6392157, a: 1}
+    text_background: {r: 0.57254905, g: 0.9490197, b: 1, a: 1}
+    UI_main: {r: 0.4039216, g: 0.3921569, b: 0.74509805, a: 1}
+    UI_accent: {r: 0.35686275, g: 0.80392164, b: 0.86666673, a: 1}
+    UI_background: {r: 0.15686275, g: 0.21568629, b: 0.27450982, a: 1}
+    background: {r: 0.0627451, g: 0.09411766, b: 0.1254902, a: 1}
+    color1: {r: 0.4901961, g: 0.33333334, b: 0.7803922, a: 1}
+    color2: {r: 0.019607844, g: 0.76470596, b: 0.86666673, a: 1}
+    color3: {r: 0.95294124, g: 0.9176471, b: 0.3647059, a: 1}
+    color4: {r: 0.9490197, g: 0.4666667, b: 0.77647066, a: 1}
+    color5: {r: 0.3019608, g: 0.28627452, b: 0.74509805, a: 1}
+    color6: {r: 0.13016199, g: 0.27734515, b: 0.4245283, a: 1}
+  - name: 80s
+    info: Dark-based theme with a 80's era color palette. Based on the retro/synthwave
+      aesthetic
+    ID: 0
+    cost: 0
+    iapTier: 0
+    isRainbow: 0
+    black: {r: 0, g: 0, b: 0, a: 1}
+    dark_grey: {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}
+    grey: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 1}
+    light_grey: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
+    white: {r: 1, g: 1, b: 1, a: 1}
+    text_main: {r: 1, g: 1, b: 1, a: 1}
+    text_accent: {r: 0.5058824, g: 0.8745099, b: 1, a: 1}
+    text_background: {r: 1, g: 0.43921572, b: 0.92549026, a: 1}
+    UI_main: {r: 0.53333336, g: 0.1137255, b: 0.9686275, a: 1}
+    UI_accent: {r: 0.87843144, g: 0.18823531, b: 0.9215687, a: 1}
+    UI_background: {r: 0.38431376, g: 0.21568629, b: 0.5568628, a: 1}
+    background: {r: 0.07058824, g: 0.0627451, b: 0.09019608, a: 1}
+    color1: {r: 0.9686275, g: 0.8000001, b: 0.09411766, a: 1}
+    color2: {r: 0.9686275, g: 0.54901963, b: 0.11764707, a: 1}
+    color3: {r: 0.9686275, g: 0.15686275, b: 0.4431373, a: 1}
+    color4: {r: 0.9176471, g: 0.12941177, b: 0.9686275, a: 1}
+    color5: {r: 0.53333336, g: 0.1137255, b: 0.9686275, a: 1}
+    color6: {r: 0.53333336, g: 0.1137255, b: 0.9686275, a: 1}
+  - name: 70s
+    info: Dark-based theme with a 70's era-ISH color palette. Based on more washed
+      out and copper-y colors
+    ID: 0
+    cost: 0
+    iapTier: 0
+    isRainbow: 0
+    black: {r: 0, g: 0, b: 0, a: 1}
+    dark_grey: {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}
+    grey: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 1}
+    light_grey: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
+    white: {r: 1, g: 1, b: 1, a: 1}
+    text_main: {r: 1, g: 1, b: 1, a: 1}
+    text_accent: {r: 0.72156864, g: 0.91372555, b: 0.8862746, a: 1}
+    text_background: {r: 0.96470594, g: 0.78823537, b: 0.6784314, a: 1}
+    UI_main: {r: 0.3019608, g: 0.6156863, b: 0.57254905, a: 1}
+    UI_accent: {r: 0.6, g: 0.73333335, b: 0.6392157, a: 1}
+    UI_background: {r: 0.34117648, g: 0.23137257, b: 0.16078432, a: 1}
+    background: {r: 0.18039216, g: 0.12941177, b: 0.08627451, a: 1}
+    color1: {r: 0.96470594, g: 0.3372549, b: 0.011764707, a: 1}
+    color2: {r: 0.9921569, g: 0.49803925, b: 0.1137255, a: 1}
+    color3: {r: 0.9803922, g: 0.7294118, b: 0.36862746, a: 1}
+    color4: {r: 0.9921569, g: 0.8745099, b: 0.6627451, a: 1}
+    color5: {r: 0.56078434, g: 0.73333335, b: 0.6117647, a: 1}
+    color6: {r: 0.27058825, g: 0.6156863, b: 0.5686275, a: 1}
+  - name: Halloween
+    info: OooOOOooooh spoooOOOoooky Halloween theme! Based on oranges and purples
+      and darker colors
+    ID: spooky_theme
+    cost: 500
+    iapTier: 0
+    isRainbow: 0
+    black: {r: 0, g: 0, b: 0, a: 1}
+    dark_grey: {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}
+    grey: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 1}
+    light_grey: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
+    white: {r: 1, g: 1, b: 1, a: 1}
+    text_main: {r: 1, g: 1, b: 1, a: 1}
+    text_accent: {r: 0.8219148, g: 0.6273585, b: 1, a: 1}
+    text_background: {r: 1, g: 0.78823537, b: 0.5882353, a: 1}
+    UI_main: {r: 0.6971066, g: 0.32549024, b: 1, a: 1}
+    UI_accent: {r: 1, g: 0.55455947, b: 0.24056602, a: 1}
+    UI_background: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 1}
+    background: {r: 0, g: 0, b: 0, a: 0}
+    color1: {r: 0.96862745, g: 0.5226549, b: 0.11372545, a: 1}
+    color2: {r: 0.9647059, g: 0.31750435, b: 0.1137255, a: 1}
+    color3: {r: 0.96862745, g: 0, b: 0.093350075, a: 1}
+    color4: {r: 0.73531646, g: 0, b: 0.96862745, a: 1}
+    color5: {r: 0.87853086, g: 0, b: 0.96862745, a: 1}
+    color6: {r: 0.4431373, g: 0, b: 0.5137255, a: 1}
+  - name: Winter
+    info: Theme based on wintery, bright, cool colors! Dark blue background with
+      bright blue and seafoam green accents
+    ID: winter_theme
+    cost: 500
+    iapTier: 0
+    isRainbow: 0
+    black: {r: 0, g: 0, b: 0, a: 1}
+    dark_grey: {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}
+    grey: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 1}
+    light_grey: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
+    white: {r: 1, g: 1, b: 1, a: 1}
+    text_main: {r: 1, g: 1, b: 1, a: 1}
+    text_accent: {r: 0.6084906, g: 0.7285272, b: 1, a: 1}
+    text_background: {r: 0.495283, g: 0.8398067, b: 1, a: 1}
+    UI_main: {r: 0.32549024, g: 0.86731887, b: 1, a: 1}
+    UI_accent: {r: 0.23921567, g: 0.4938771, b: 1, a: 1}
+    UI_background: {r: 0, g: 0.13356525, b: 0.2735849, a: 1}
+    background: {r: 0, g: 0, b: 0, a: 0}
+    color1: {r: 0.2028302, g: 0.28344494, b: 1, a: 1}
+    color2: {r: 0.20392156, g: 0.5509042, b: 1, a: 1}
+    color3: {r: 0.20392156, g: 0.86327535, b: 1, a: 1}
+    color4: {r: 0.20392156, g: 1, b: 0.88228494, a: 1}
+    color5: {r: 0.20392156, g: 1, b: 0.8056996, a: 1}
+    color6: {r: 0.20392156, g: 1, b: 0.60988414, a: 1}
+  - name: Space
+    info: Psst... hey you, ya like space? Ya like dark blue, purple, and greys with
+      white, red, and orange accents? Then here's your theme!
+    ID: space_theme
+    cost: 1000
+    iapTier: 1
+    isRainbow: 0
+    black: {r: 0, g: 0, b: 0, a: 1}
+    dark_grey: {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}
+    grey: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 1}
+    light_grey: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
+    white: {r: 1, g: 1, b: 1, a: 1}
+    text_main: {r: 1, g: 1, b: 1, a: 1}
+    text_accent: {r: 0.59607846, g: 0.64705884, b: 1, a: 1}
+    text_background: {r: 0.5176471, g: 0.46274513, b: 0.8352942, a: 1}
+    UI_main: {r: 0.27450982, g: 0.22352943, b: 0.8000001, a: 1}
+    UI_accent: {r: 0.69411767, g: 0.43921572, b: 1, a: 1}
+    UI_background: {r: 0.184, g: 0.184, b: 0.184, a: 1}
+    background: {r: 0.050980397, g: 0.050980397, b: 0.050980397, a: 1}
+    color1: {r: 0.27450982, g: 0.22352943, b: 0.8000001, a: 1}
+    color2: {r: 0.70294076, g: 0.20392156, b: 1, a: 1}
+    color3: {r: 1, g: 0.2657777, b: 0.25943398, a: 1}
+    color4: {r: 0.8867924, g: 0.5318538, b: 0.2300641, a: 1}
+    color5: {r: 0.24056605, g: 0.3231993, b: 0.9622642, a: 1}
+    color6: {r: 0.27450982, g: 0.22352943, b: 0.8000001, a: 1}
+  - name: Ocean
+    info: Deep deep down dark deep down ocean theme for people who like dark blues,
+      greens, and purples!
+    ID: ocean_theme
+    cost: 1000
+    iapTier: 1
+    isRainbow: 0
+    black: {r: 0, g: 0, b: 0, a: 1}
+    dark_grey: {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}
+    grey: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 1}
+    light_grey: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
+    white: {r: 1, g: 1, b: 1, a: 1}
+    text_main: {r: 1, g: 1, b: 1, a: 1}
+    text_accent: {r: 0.71730393, g: 0.6462264, b: 1, a: 1}
+    text_background: {r: 0.29992685, g: 0.26553044, b: 0.4811321, a: 1}
+    UI_main: {r: 0.30962977, g: 0.50213903, b: 0.9245283, a: 1}
+    UI_accent: {r: 0.2719384, g: 0.70540786, b: 0.9150943, a: 1}
+    UI_background: {r: 0.07799998, g: 0.11699995, b: 0.468, a: 1}
+    background: {r: 0.03137255, g: 0.04705883, b: 0.18823531, a: 1}
+    color1: {r: 0.13501246, g: 0.29665518, b: 0.7735849, a: 1}
+    color2: {r: 0.1981132, g: 0.44604212, b: 0.7924528, a: 1}
+    color3: {r: 0.16260235, g: 0.54344296, b: 0.5471698, a: 1}
+    color4: {r: 0.20692416, g: 0.4716981, b: 0.24889776, a: 1}
+    color5: {r: 0.48158363, g: 0.30277678, b: 0.7924528, a: 1}
+    color6: {r: 0.27450982, g: 0.22352943, b: 0.8000001, a: 1}
+  fontLooks:
+  - name: Tommy Bold
+    info: "A very clean looking font, Made Tommy by MadeType\r, in its bold size"
+    ID: 0
+    cost: 0
+    iapTier: 0
+    font: {fileID: 11400000, guid: 41b923c1e18ee6844b7ed573794dc663, type: 2}
+    bold: {fileID: 11400000, guid: b433182f79e7fb34695c318faea1b6fb, type: 2}
+    thin: {fileID: 11400000, guid: 3076b1c7a0a79c14baff103496eb5310, type: 2}
+  - name: Tommy Regular
+    info: "A very clean looking font, Made Tommy by MadeType\r, in its regular size"
+    ID: 0
+    cost: 0
+    iapTier: 0
+    font: {fileID: 11400000, guid: 51f0f34e32d9214439572cbd4b4fc401, type: 2}
+    bold: {fileID: 11400000, guid: 41b923c1e18ee6844b7ed573794dc663, type: 2}
+    thin: {fileID: 11400000, guid: bacf3a9a6ebf26b42bfc8d7b7e3304f9, type: 2}
+  - name: Tommy Thin
+    info: "A very clean looking font, Made Tommy by MadeType\r, in its thin size"
+    ID: 0
+    cost: 0
+    iapTier: 0
+    font: {fileID: 11400000, guid: 4f2b9d0dfa53e254fa27a857cf1eaf50, type: 2}
+    bold: {fileID: 11400000, guid: 51f0f34e32d9214439572cbd4b4fc401, type: 2}
+    thin: {fileID: 11400000, guid: bacf3a9a6ebf26b42bfc8d7b7e3304f9, type: 2}
+  - name: Roboto Regular
+    info: A very standard looking font, Roboto, in its regular size
+    ID: 0
+    cost: 0
+    iapTier: 0
+    font: {fileID: 11400000, guid: cbee0da9279c32b4fb1c19de82236807, type: 2}
+    bold: {fileID: 11400000, guid: c99207e0b05a8024980e1513746842b3, type: 2}
+    thin: {fileID: 11400000, guid: 97b049b27005b0246869dadf0a55a15a, type: 2}
+  - name: Roboto Bold
+    info: A very standard looking font, Roboto, in its bold size
+    ID: 0
+    cost: 0
+    iapTier: 0
+    font: {fileID: 11400000, guid: 2cd8ac742772f014b80c65132a21dc0a, type: 2}
+    bold: {fileID: 11400000, guid: 0a41a436bfee00d48a648e92598c627c, type: 2}
+    thin: {fileID: 11400000, guid: cbee0da9279c32b4fb1c19de82236807, type: 2}
+  - name: Teko
+    info: A standard, cartoony, but readable font
+    ID: 0
+    cost: 0
+    iapTier: 0
+    font: {fileID: 11400000, guid: 621f72d0a7550aa48b69d0e54db60e43, type: 2}
+    bold: {fileID: 11400000, guid: f854ccde8d0741645ac0cea05d3f1823, type: 2}
+    thin: {fileID: 11400000, guid: b5d7287c47dbeb84caf8f50482cae345, type: 2}
+  - name: Dosis
+    info: A very curvy and thin font that is pretty nice to look at!
+    ID: 0
+    cost: 0
+    iapTier: 0
+    font: {fileID: 11400000, guid: 9613a89663a10914bac61b7312538c60, type: 2}
+    bold: {fileID: 11400000, guid: 1c2997bdfdf459a46a5a69bc2708b441, type: 2}
+    thin: {fileID: 11400000, guid: 1cfbaa839c7419e4eb8538323ed6df82, type: 2}
+  - name: Crazy
+    info: Wow, this one's a doozy! This font is far from easily readable. It includes
+      paint splatters, monster-letters, and grafitti-esque fonts.
+    ID: crazy_font
+    cost: 500
+    iapTier: 0
+    font: {fileID: 11400000, guid: cba27a6212b31344484d4fdeaa0372c1, type: 2}
+    bold: {fileID: 11400000, guid: 5bcf1023f108c4649ae9eef0b0fda35c, type: 2}
+    thin: {fileID: 11400000, guid: 4f22ffcc7041c8c488cd42c5efb6ba99, type: 2}
+  - name: Spooky
+    info: OooOOoohh sssPOOOkyyyy font! Includes dripping, chiller, and scratchy fonts
+    ID: spooky_font
+    cost: 500
+    iapTier: 0
+    font: {fileID: 11400000, guid: cadab230b2f642145ab2bf6da7675ac0, type: 2}
+    bold: {fileID: 11400000, guid: daab2da094aee634d822449a34ba75bd, type: 2}
+    thin: {fileID: 11400000, guid: 0c8e19bdc65f2b848a8b61c1eab5d98d, type: 2}
+  - name: Festive
+    info: A wintery-styled pack that includes elegant fonts with some falling snow
+      details
+    ID: festive_font
+    cost: 500
+    iapTier: 0
+    font: {fileID: 11400000, guid: cba991a8c8aca4e4a894347a40c690b9, type: 2}
+    bold: {fileID: 11400000, guid: f6d5cf9f595c46947a96e862a4b3d9e3, type: 2}
+    thin: {fileID: 11400000, guid: cba991a8c8aca4e4a894347a40c690b9, type: 2}
+  - name: Comic Sans
+    info: Exactly what you would expect
+    ID: comic_sans_font
+    cost: 2500
+    iapTier: 0
+    font: {fileID: 11400000, guid: 4a0580a80ef394a41b4dc545830f5ebd, type: 2}
+    bold: {fileID: 11400000, guid: 4a0580a80ef394a41b4dc545830f5ebd, type: 2}
+    thin: {fileID: 11400000, guid: a69c8a565de895e45b68ad553894bc26, type: 2}
+  - name: Upside Down
+    info: Huh... what an odd one. It's just a normal font but... all upside down?
+      How weird!
+    ID: upside_down_font
+    cost: 1000
+    iapTier: 0
+    font: {fileID: 11400000, guid: 69fe90fc153934647a468c3a10fdf301, type: 2}
+    bold: {fileID: 11400000, guid: 69fe90fc153934647a468c3a10fdf301, type: 2}
+    thin: {fileID: 11400000, guid: 69fe90fc153934647a468c3a10fdf301, type: 2}
+  backgrounds:
+  - name: Numbers
+    info: Basic background full of floating numbers of different sizes
+    ID: 0
+    cost: 0
+    iapTier: 0
+    areNumbers: 1
+    rotateX: 0
+    rotateY: 0
+    rotateZ: 0
+    rotationSpeedMultX: 1
+    rotationSpeedMultY: 1
+    rotationSpeedMultZ: 1
+    maxNumber: 30
+    maxStartXAngle: 0
+    maxStartYAngle: 0
+    maxStartZAngle: 360
+    minSizeMultiplier: 0.085
+    maxSizeMultiplier: 0.275
+    useThemeColors: 0
+    useThemeLookTypes: 0
+    themeColorPercentage: 0
+    useGlow: 0
+    useAber: 0
+    backgroundSprite: {fileID: 0}
+    moveBackgroundImage: 0
+    sprites: []
+  - name: Galaxies
+    info: Giant floating galaxies, nebulas, black holes, stars, and more! Comes with
+      a backdrop of deepfield imagery
+    ID: galaxies_background
+    cost: 1500
+    iapTier: 1
+    areNumbers: 0
+    rotateX: 0
+    rotateY: 0
+    rotateZ: 1
+    rotationSpeedMultX: 1
+    rotationSpeedMultY: 1
+    rotationSpeedMultZ: 0.8
+    maxNumber: 15
+    maxStartXAngle: 60
+    maxStartYAngle: 65
+    maxStartZAngle: 360
+    minSizeMultiplier: 0.1
+    maxSizeMultiplier: 0.3
+    useThemeColors: 0
+    useThemeLookTypes: 0
+    themeColorPercentage: 0.25
+    useGlow: 0
+    useAber: 0
+    backgroundSprite: {fileID: 21300000, guid: e4a4143ca95c6f14091b61c86eed8891, type: 3}
+    moveBackgroundImage: 1
+    sprites:
+    - {fileID: 21300000, guid: 1d2bef869fcc7a74d8bd989b57e6115a, type: 3}
+    - {fileID: 21300000, guid: befb900770bd47f46be9db7b8bf74b76, type: 3}
+    - {fileID: 21300000, guid: 3424fba68c6507a4fb6adfc222f94e1c, type: 3}
+    - {fileID: 21300000, guid: 4b979540385c66c47918950a822b776f, type: 3}
+    - {fileID: 21300000, guid: 1c656157bed21df4795881a496704849, type: 3}
+    - {fileID: 21300000, guid: d23732c322d266a4291ef2741467d47a, type: 3}
+  - name: Space w/ No Objects
+    info: You like deepfield space imagery without the distraction of giant floating
+      objects? Here's your background!
+    ID: space_background
+    cost: 500
+    iapTier: 0
+    areNumbers: 0
+    rotateX: 0
+    rotateY: 0
+    rotateZ: 0
+    rotationSpeedMultX: 1
+    rotationSpeedMultY: 1
+    rotationSpeedMultZ: 1
+    maxNumber: 0
+    maxStartXAngle: 0
+    maxStartYAngle: 0
+    maxStartZAngle: 0
+    minSizeMultiplier: 0.1
+    maxSizeMultiplier: 0.3
+    useThemeColors: 0
+    useThemeLookTypes: 0
+    themeColorPercentage: 0
+    useGlow: 0
+    useAber: 0
+    backgroundSprite: {fileID: 21300000, guid: e4a4143ca95c6f14091b61c86eed8891, type: 3}
+    moveBackgroundImage: 1
+    sprites: []
+  - name: Ocean
+    info: Pairs well with the Ocean theme. Has floating sea creatures like squids,
+      octopi, sharks, jellies, and more!
+    ID: ocean_background
+    cost: 1500
+    iapTier: 1
+    areNumbers: 0
+    rotateX: 0
+    rotateY: 0
+    rotateZ: 1
+    rotationSpeedMultX: 1
+    rotationSpeedMultY: 1
+    rotationSpeedMultZ: 0.25
+    maxNumber: 20
+    maxStartXAngle: 0
+    maxStartYAngle: 0
+    maxStartZAngle: 45
+    minSizeMultiplier: 0.07
+    maxSizeMultiplier: 0.25
+    useThemeColors: 0
+    useThemeLookTypes: 0
+    themeColorPercentage: 0
+    useGlow: 0
+    useAber: 0
+    backgroundSprite: {fileID: 21300000, guid: 96df051f7e85fbb4aa34d29d29c74f7f, type: 3}
+    moveBackgroundImage: 1
+    sprites:
+    - {fileID: 21300000, guid: 4ec3de234d867c74da2c191199ccf950, type: 3}
+    - {fileID: 21300000, guid: 4098164dc32a843489ee61998ac09f20, type: 3}
+    - {fileID: 21300000, guid: 6d88d944acbefb646abc7f29f7f7058b, type: 3}
+    - {fileID: 21300000, guid: a14b73da5f4f7544589597f223c0aec7, type: 3}
+    - {fileID: 21300000, guid: 2862b29f2b372ab4abe370c6fa097d5d, type: 3}
+    - {fileID: 21300000, guid: 870bc15895c704944bb5d5dc7c5eea0f, type: 3}
+    - {fileID: 21300000, guid: 4b7d48d802515fd4ca027117b4d346bd, type: 3}
+    - {fileID: 21300000, guid: 7d6829af73734f54780d3c50ea7bac27, type: 3}
+    - {fileID: 21300000, guid: 7cfecb6ce8f8ed442b7352c2e1daeefb, type: 3}
+    - {fileID: 21300000, guid: d33d8bd1c23fb454d8b7749ac394c2e5, type: 3}
+    - {fileID: 21300000, guid: 6f449b9e70902634f9f12eaaadc60158, type: 3}
+    - {fileID: 21300000, guid: beec9d421c62d8d47a626fec1ae1efb9, type: 3}
+  - name: Winter
+    info: Pairs well with the Winter  theme. Has floating wintery objects like snowflakes,
+      snowpeople, and festive icons
+    ID: winter_background
+    cost: 1000
+    iapTier: 0
+    areNumbers: 0
+    rotateX: 0
+    rotateY: 0
+    rotateZ: 0
+    rotationSpeedMultX: 1
+    rotationSpeedMultY: 1
+    rotationSpeedMultZ: 0.25
+    maxNumber: 25
+    maxStartXAngle: 10
+    maxStartYAngle: 10
+    maxStartZAngle: 30
+    minSizeMultiplier: 0.07
+    maxSizeMultiplier: 0.25
+    useThemeColors: 1
+    useThemeLookTypes: 0
+    themeColorPercentage: 0.216
+    useGlow: 0
+    useAber: 0
+    backgroundSprite: {fileID: 21300000, guid: 96df051f7e85fbb4aa34d29d29c74f7f, type: 3}
+    moveBackgroundImage: 1
+    sprites:
+    - {fileID: 21300000, guid: c833d7477c6901e4d85c595b870a689b, type: 3}
+    - {fileID: 21300000, guid: 22131cc72d84d2947a01ece77dde2bc8, type: 3}
+    - {fileID: 21300000, guid: a32c77581eda5a1428ab1fddea00e96b, type: 3}
+    - {fileID: 21300000, guid: 300dcd0005243ab46b3390c41a8cb1c9, type: 3}
+    - {fileID: 21300000, guid: 0accc11d06d1259458cfcb8404e51ba3, type: 3}
+    - {fileID: 21300000, guid: 52e910e28655ecd46a561e98ff2e6eeb, type: 3}
+    - {fileID: 21300000, guid: b466c3a45bf2ccf46b27ba1d4331ea03, type: 3}
+    - {fileID: 21300000, guid: 536f2bb3223c3704f8b62cbe9086e735, type: 3}
+    - {fileID: 21300000, guid: 183a746c5a92bc44498613a9c9122964, type: 3}
+    - {fileID: 21300000, guid: eced406afe8c4924593649f4d9ac7aa4, type: 3}
+    - {fileID: 21300000, guid: 1cb2a5a7ce6e48243aad79253c1d2e2c, type: 3}
+    - {fileID: 21300000, guid: 5a6d988ee19510b43af59cfe0e6393be, type: 3}
+    - {fileID: 21300000, guid: 4bbb0ed54d9b28648a3dd1b7eaf8ca3c, type: 3}
+    - {fileID: 21300000, guid: c3874cf1705f53f43994eb57cadf0025, type: 3}
+--- !u!114 &1745070480171687003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5988841794982233191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18e63c218fa80a44eada41bf23ff04af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BackgroundBlurWeightMax: 15
+  UIBlurWeightMax: 15
+  OtherBlurWeightMax: 25
+--- !u!114 &-2147205735781113129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5988841794982233191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8aad03c118c5af94da2195736deadef0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneChangePrefab: {fileID: 1823643873681743950, guid: 578284efcc877504f8dcee1cb524b927, type: 3}
+  circle: {fileID: 21300000, guid: adc0eec0ac26e934d90a6ec27689157b, type: 3}
+  easeType: 16
+--- !u!114 &-5567522310578942870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5988841794982233191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d738b7129cbea194da53d42b2c997add, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SaveFileName: save.txt
+  savedLevels: []
+  savedLevelsClass:
+    savedLevels: []
+--- !u!114 &-2384673070612820983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5988841794982233191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b5b1f82cecb194984b4e27c64f6dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AchievementCanvas: {fileID: 0}
+  AchievementAreaPrefab: {fileID: 7273640795324290191, guid: 1eb7fe75234c9e64db403c2916838397, type: 3}
+  AchievementPrefab: {fileID: 8756783257648145753, guid: f21ae3a8a34d46449b4f462e3968067c, type: 3}
+  AchievementParent: {fileID: 0}
+  PlayerInfoObject: {fileID: 0}
+  TitleDivider: 9
+  AchievementHeightDivider: 8
+  LevelAchievements:
+  - name: Baby's First Sudoku
+    info: Complete your first level!
+    progress: 0
+    targetNumber: 1
+    xp: 10
+    reward: 10
+    completed: 0
+    collected: 0
+    achievedText: Humble beginnings
+    iconText: 1
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: 5 Levels
+    info: Complete 5 levels
+    progress: 0
+    targetNumber: 5
+    xp: 10
+    reward: 50
+    completed: 0
+    collected: 0
+    achievedText: Not too shabby!
+    iconText: 5
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: 10 Levels
+    info: Complete 10 levels
+    progress: 0
+    targetNumber: 10
+    xp: 50
+    reward: 100
+    completed: 0
+    collected: 0
+    achievedText: Good job! Keep at it!
+    iconText: 10
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: 25 Levels
+    info: Complete 25 levels
+    progress: 0
+    targetNumber: 25
+    xp: 100
+    reward: 200
+    completed: 0
+    collected: 0
+    achievedText: Hey, you're really good at this!
+    iconText: 25
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: 50 Levels
+    info: Complete 50 levels
+    progress: 0
+    targetNumber: 50
+    xp: 200
+    reward: 400
+    completed: 0
+    collected: 0
+    achievedText: Wow! If I had a nickel for every level you've completed... well,
+      I'd have $2.50
+    iconText: 50
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: 100 Levels
+    info: Complete 100 levels
+    progress: 0
+    targetNumber: 100
+    xp: 400
+    reward: 600
+    completed: 0
+    collected: 0
+    achievedText: You must <i>really</i> like Sudoku.
+    iconText: 100
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: 250 Levels
+    info: Complete 250 levels
+    progress: 0
+    targetNumber: 250
+    xp: 800
+    reward: 1500
+    completed: 0
+    collected: 0
+    achievedText: For 250 levels, you deserve way more than this lousy achievement.
+      Lemme see if I have anything around here you could have... No I couldn't find
+      anything sorry
+    iconText: 250
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: 500 Levels
+    info: Complete 250 levels
+    progress: 0
+    targetNumber: 500
+    xp: 1200
+    reward: 3000
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 500
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: 1000 Levels
+    info: Complete 1000 levels
+    progress: 0
+    targetNumber: 1000
+    xp: 2000
+    reward: 3000
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 1000
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: 2000 Levels
+    info: Complete 2000 Levels
+    progress: 0
+    targetNumber: 2000
+    xp: 3000
+    reward: 3000
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 2000
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: 3000 Levels
+    info: Complete 3000 levels
+    progress: 0
+    targetNumber: 3000
+    xp: 4500
+    reward: 3000
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 3000
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: 4000 Levels
+    info: Complete 4000 levels
+    progress: 0
+    targetNumber: 4000
+    xp: 6000
+    reward: 3000
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 4000
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: "\u221E Levels"
+    info: Complete every level
+    progress: 0
+    targetNumber: 5800
+    xp: 10000
+    reward: 10000
+    completed: 0
+    collected: 0
+    achievedText: I can't believe it. You literally completed every level I made.
+      I don't physically understand how that's possible. But dang, good job. That's
+      amazing. Here, have everything I can give you
+    iconText: "\u221E"
+    ID: 0
+    achievementObject: {fileID: 0}
+  PlayerLevelAchievements:
+  - name: Baby's First Level
+    info: Become level 1
+    progress: 0
+    targetNumber: 1
+    xp: 10
+    reward: 10
+    completed: 0
+    collected: 0
+    achievedText: Hey, it's better than level 0
+    iconText: 1
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: Level 5
+    info: Have a player level of 5 or more
+    progress: 0
+    targetNumber: 5
+    xp: 100
+    reward: 100
+    completed: 0
+    collected: 0
+    achievedText: I guess it's better than level 4?
+    iconText: 5
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: Level 10
+    info: Have a player level of 10 or more
+    progress: 0
+    targetNumber: 10
+    xp: 500
+    reward: 500
+    completed: 0
+    collected: 0
+    achievedText: Level 10 is impressive, but I bet you can't get to level 15
+    iconText: 15
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: Level 15
+    info: Have a player level of 15 or more
+    progress: 0
+    targetNumber: 15
+    xp: 1000
+    reward: 1000
+    completed: 0
+    collected: 0
+    achievedText: Oh, I guess I was wrong :/
+    iconText: 15
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: Level 20
+    info: Have a player level of 20 or more
+    progress: 0
+    targetNumber: 20
+    xp: 1000
+    reward: 1000
+    completed: 0
+    collected: 0
+    achievedText: You really don't have to rub it in, do you? Wait no, I mean, keep
+      playing my game!
+    iconText: 20
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: Level 25
+    info: Have a player level of 25 or more
+    progress: 0
+    targetNumber: 25
+    xp: 1500
+    reward: 1500
+    completed: 0
+    collected: 0
+    achievedText: I'm running out of funny things to say about your level... I don't
+      know, just have 2000 coins
+    iconText: 25
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: Level 30
+    info: Have a player level of 30 or more
+    progress: 0
+    targetNumber: 30
+    xp: 2000
+    reward: 2000
+    completed: 0
+    collected: 0
+    achievedText: I'm running out of funny things to say about your level... I don't
+      know, just have 2000 coins
+    iconText: 30
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: Level 35
+    info: Have a player level of 35 or more
+    progress: 0
+    targetNumber: 35
+    xp: 2000
+    reward: 2000
+    completed: 0
+    collected: 0
+    achievedText: Only 5 more until you're max level!
+    iconText: 35
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: Level 40
+    info: Have a player level of 40 or more
+    progress: 0
+    targetNumber: 40
+    xp: 3000
+    reward: 3000
+    completed: 0
+    collected: 0
+    achievedText: Thats it. You're at max level.
+    iconText: 40
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: Level 45
+    info: Have a player level of 45 or more
+    progress: 0
+    targetNumber: 45
+    xp: 6000
+    reward: 3000
+    completed: 0
+    collected: 0
+    achievedText: Wait no, you're right. 40 isn't a good enough number to end on.
+      Let's keep going!
+    iconText: 45
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: Level 50
+    info: Have a player level of 50... or more?
+    progress: 0
+    targetNumber: 50
+    xp: 10000
+    reward: 10000
+    completed: 0
+    collected: 0
+    achievedText: 'Now <b>that''s</b> a nice number. But I''m still not satisfied.
+      How about this: why don''t you just set your own level? That way you can set
+      it to any number and show your friends and be like "yeah I''m level 69" or
+      whatever'
+    iconText: 50
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: Level 1000
+    info: Have a player level of 1000
+    progress: 0
+    targetNumber: 1000
+    xp: 0
+    reward: 1
+    completed: 0
+    collected: 0
+    achievedText: We both know you just set your level to 1000. But hey, nobody else
+      knows that ;)\nGo show off your new high level. And seriously, thank you so
+      much for playing my game.
+    iconText: 1000
+    ID: 0
+    achievementObject: {fileID: 0}
+  BoardsCompleted:
+  - name: Standard
+    info: Complete every Sudoku level
+    progress: 0
+    targetNumber: 350
+    xp: 4000
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: S
+    ID: 0
+    achievementObject: {fileID: 0}
+    boardSize: 0
+    boxSize: 0
+  - name: 
+    info: 
+    progress: 0
+    targetNumber: 400
+    xp: 500
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 
+    ID: 0
+    achievementObject: {fileID: 0}
+    boardSize: 9
+    boxSize: 3
+  - name: 
+    info: 
+    progress: 0
+    targetNumber: 400
+    xp: 500
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 
+    ID: 0
+    achievementObject: {fileID: 0}
+    boardSize: 8
+    boxSize: 3
+  - name: 
+    info: 
+    progress: 0
+    targetNumber: 300
+    xp: 500
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 
+    ID: 0
+    achievementObject: {fileID: 0}
+    boardSize: 8
+    boxSize: 2
+  - name: 
+    info: 
+    progress: 0
+    targetNumber: 400
+    xp: 1000
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 
+    ID: 0
+    achievementObject: {fileID: 0}
+    boardSize: 7
+    boxSize: 3
+  - name: 
+    info: 
+    progress: 0
+    targetNumber: 400
+    xp: 1000
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 
+    ID: 0
+    achievementObject: {fileID: 0}
+    boardSize: 7
+    boxSize: 2
+  - name: 
+    info: 
+    progress: 0
+    targetNumber: 400
+    xp: 1000
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 
+    ID: 0
+    achievementObject: {fileID: 0}
+    boardSize: 6
+    boxSize: 3
+  - name: 
+    info: 
+    progress: 0
+    targetNumber: 400
+    xp: 1000
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 
+    ID: 0
+    achievementObject: {fileID: 0}
+    boardSize: 6
+    boxSize: 1
+  - name: 
+    info: 
+    progress: 0
+    targetNumber: 400
+    xp: 1500
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 
+    ID: 0
+    achievementObject: {fileID: 0}
+    boardSize: 5
+    boxSize: 3
+  - name: 
+    info: 
+    progress: 0
+    targetNumber: 400
+    xp: 1500
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 
+    ID: 0
+    achievementObject: {fileID: 0}
+    boardSize: 5
+    boxSize: 1
+  - name: 
+    info: 
+    progress: 0
+    targetNumber: 400
+    xp: 2000
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 
+    ID: 0
+    achievementObject: {fileID: 0}
+    boardSize: 4
+    boxSize: 3
+  - name: 
+    info: 
+    progress: 0
+    targetNumber: 400
+    xp: 2000
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 
+    ID: 0
+    achievementObject: {fileID: 0}
+    boardSize: 4
+    boxSize: 1
+  - name: 
+    info: 
+    progress: 0
+    targetNumber: 400
+    xp: 1500
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 
+    ID: 0
+    achievementObject: {fileID: 0}
+    boardSize: 3
+    boxSize: 2
+  - name: 
+    info: 
+    progress: 0
+    targetNumber: 400
+    xp: 2500
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 
+    ID: 0
+    achievementObject: {fileID: 0}
+    boardSize: 2
+    boxSize: 2
+  - name: 
+    info: 
+    progress: 0
+    targetNumber: 400
+    xp: 6000
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 
+    ID: 0
+    achievementObject: {fileID: 0}
+    boardSize: 1
+    boxSize: 0
+  DaysPlayed:
+  - name: Welcome back!
+    info: Play 2 days in a row
+    progress: 0
+    targetNumber: 2
+    xp: 10
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: Hope to see you again soon!
+    iconText: '>>'
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: 1 Week
+    info: Play one week in a row
+    progress: 0
+    targetNumber: 7
+    xp: 100
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: Ok, you got me! You don't actually have to play in a row to get
+      these achievements. You just have to open the app!
+    iconText: 1
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: 2 Weeks
+    info: Play two weeks (in a row?)
+    progress: 0
+    targetNumber: 14
+    xp: 500
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 2
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: 3 Weeks
+    info: Play for three weeks (maybe <i><b>not</i></b> in a row)
+    progress: 0
+    targetNumber: 21
+    xp: 500
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 3
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: 4 Weeks
+    info: Play for four weeks
+    progress: 0
+    targetNumber: 28
+    xp: 1000
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 4
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: 6 Weeks
+    info: Play for six weeks
+    progress: 0
+    targetNumber: 42
+    xp: 1000
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 6
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: 8 Weeks
+    info: Play for eight weeks
+    progress: 0
+    targetNumber: 56
+    xp: 1000
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 8
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: 10 Weeks
+    info: Play for ten weeks
+    progress: 0
+    targetNumber: 70
+    xp: 1000
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: Why am I using weeks instead of months? That would make a lot more
+      sense...
+    iconText: 10
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: 3 Months
+    info: Play for three months
+    progress: 0
+    targetNumber: 84
+    xp: 1000
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: Ok, now I'm using months instead of weeks
+    iconText: 3
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: 4 Months
+    info: Play four for months
+    progress: 0
+    targetNumber: 112
+    xp: 2000
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: And yes, the "four for" typo was intentional. Did you catch it?
+    iconText: 4
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: 5 Months
+    info: Play for five months
+    progress: 0
+    targetNumber: 140
+    xp: 2000
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: 
+    iconText: 5
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: 6 Months
+    info: Play for six months
+    progress: 0
+    targetNumber: 168
+    xp: 5000
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: Hey, you're already halfway there!
+    iconText: 6
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: 8 Months
+    info: Play for eight months
+    progress: 0
+    targetNumber: 224
+    xp: 6000
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: Hey, you're already 3/4 of the way there!
+    iconText: 8
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: 10
+    info: Play for ten months
+    progress: 0
+    targetNumber: 280
+    xp: 8000
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: Hey, you're already 10/12 of the- wait no. You're 5/6 of the...
+      Eh this jokes is getting old. Four months old to be exact!
+    iconText: 10
+    ID: 0
+    achievementObject: {fileID: 0}
+  - name: A YEAR
+    info: Play for A WHOLE YEAR??
+    progress: 0
+    targetNumber: 365
+    xp: 8000
+    reward: 0
+    completed: 0
+    collected: 0
+    achievedText: CONGRATULATIONS YOU DID IT!
+    iconText: <b><i><u>1.
+    ID: 0
+    achievementObject: {fileID: 0}
+  OtherAchievements: []
+--- !u!114 &6296857033074438919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5988841794982233191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e254df3b5a3224b82feb9eb4125099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AchievementPopupPrefab: {fileID: 2267674939534888164, guid: b77334ba8f174d140978e5c587f5f8e2, type: 3}
+  PopUpCanvas: {fileID: 0}
+  widthDivider: 8
+  heightDivider: 3.5
+  yPosDivider: 3
+  expandBlurMultiplier: 3
+  moveTime: 1
+  holdTime: 4
+  easeCurve: 7
+--- !u!114 &941564587147436431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5988841794982233191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f144f4d08fb3471489fa8992bf121b91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fillXPs: 0
+  clearXPs: 0
+  numLevels: 50
+  maxLevelXP: 5000
+  XPperLevel:
+  - level: 1
+    xp: 50
+    exponent: -1
+  - level: 2
+    xp: 50
+    exponent: -1
+  - level: 3
+    xp: 50
+    exponent: -1
+  - level: 4
+    xp: 50
+    exponent: -1
+  - level: 5
+    xp: 50
+    exponent: -1
+  - level: 6
+    xp: 60
+    exponent: -1
+  - level: 7
+    xp: 80
+    exponent: -1
+  - level: 8
+    xp: 100
+    exponent: -1
+  - level: 9
+    xp: 150
+    exponent: -1
+  - level: 10
+    xp: 200
+    exponent: -1
+  - level: 11
+    xp: 300
+    exponent: -1
+  - level: 12
+    xp: 400
+    exponent: -1
+  - level: 13
+    xp: 500
+    exponent: -1
+  - level: 14
+    xp: 700
+    exponent: -1
+  - level: 15
+    xp: 1000
+    exponent: -1
+  - level: 16
+    xp: 1130
+    exponent: 3
+  - level: 17
+    xp: 1160
+    exponent: -1
+  - level: 18
+    xp: 1190
+    exponent: -1
+  - level: 19
+    xp: 1220
+    exponent: -1
+  - level: 20
+    xp: 1260
+    exponent: -1
+  - level: 21
+    xp: 1460
+    exponent: 2.5
+  - level: 22
+    xp: 1510
+    exponent: -1
+  - level: 23
+    xp: 1570
+    exponent: -1
+  - level: 24
+    xp: 1640
+    exponent: -1
+  - level: 25
+    xp: 1710
+    exponent: -1
+  - level: 26
+    xp: 1780
+    exponent: -1
+  - level: 27
+    xp: 1860
+    exponent: -1
+  - level: 28
+    xp: 1940
+    exponent: -1
+  - level: 29
+    xp: 2020
+    exponent: -1
+  - level: 30
+    xp: 2120
+    exponent: -1
+  - level: 31
+    xp: 2360
+    exponent: 2.25
+  - level: 32
+    xp: 2470
+    exponent: -1
+  - level: 33
+    xp: 2570
+    exponent: -1
+  - level: 34
+    xp: 2680
+    exponent: -1
+  - level: 35
+    xp: 2790
+    exponent: -1
+  - level: 36
+    xp: 2910
+    exponent: -1
+  - level: 37
+    xp: 3030
+    exponent: -1
+  - level: 38
+    xp: 3160
+    exponent: -1
+  - level: 39
+    xp: 3290
+    exponent: -1
+  - level: 40
+    xp: 3420
+    exponent: -1
+  - level: 41
+    xp: 3210
+    exponent: 3
+  - level: 42
+    xp: 3370
+    exponent: -1
+  - level: 43
+    xp: 3540
+    exponent: -1
+  - level: 44
+    xp: 3730
+    exponent: -1
+  - level: 45
+    xp: 3920
+    exponent: -1
+  - level: 46
+    xp: 3870
+    exponent: 4
+  - level: 47
+    xp: 4120
+    exponent: -1
+  - level: 48
+    xp: 4400
+    exponent: -1
+  - level: 49
+    xp: 4690
+    exponent: -1
+  - level: 50
+    xp: 5000
+    exponent: -1
+--- !u!114 &3751640099960716650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5988841794982233191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74056ee1801a9974cac2b98bec3ef895, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8548743441270031867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5988841794982233191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce514be3cb75c934185803db78af8ffa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StatisticsHolder: {fileID: 0}
+  StatisticTitle: {fileID: 4322308260202265892, guid: 69b5ceb41ece63246921bbfb0261fa82, type: 3}
+  StatisticsObject: {fileID: 3187705543805943446, guid: 880a8070a96cf4841858069d447a9ef0, type: 3}
+  StatisticHeightDivider: 15
+  titleLook: 4
+  amountLook: 3
+  statisticsToMake:
+  - section: 0
+    var: 0
+    title: Total levels completed
+    suffix: levels
+    infoText: 'How many levels you''ve completed in total!
+
+      <i>Note: This includes
+      levels you''ve completed multiple times!'
+  - section: 0
+    var: 1
+    title: Percentage completed
+    suffix: '%'
+    infoText: 'How many levels you''ve completed out of how many levels total there
+      are to complete!
+
+      <i>Note: This does <b>not</b> include levels completed
+      multiple times'
+  - section: 0
+    var: 2
+    title: Number of awards achieved
+    suffix: awards
+    infoText: How many total awards you've gotten
+  - section: 0
+    var: 3
+    title: Percentage achieved
+    suffix: '%'
+    infoText: How many awards you've achieved out of how many total there are to
+      get
+  - section: 1
+    var: 4
+    title: Numbers placed
+    suffix: numbers
+    infoText: How many numbers in total that you've placed while playing a level
+  - section: 1
+    var: 5
+    title: Numbers erased
+    suffix: numbers
+    infoText: The total number of spaces erased in game
+  - section: 1
+    var: 6
+    title: Edits made
+    suffix: edits
+    infoText: The total number of edits made in game
+  - section: 1
+    var: 7
+    title: Actions undone
+    suffix: actions
+    infoText: The total number of actions undone in game
+  - section: 1
+    var: 8
+    title: Actions redone
+    suffix: actions
+    infoText: The total number of actions redone in game
+  - section: 1
+    var: 9
+    title: Hints used
+    suffix: hints
+    infoText: The total number of hints used in game
+  - section: 2
+    var: 10
+    title: Number of days played
+    suffix: days
+    infoText: 'The total number of days you''ve played Simply Sudoku!
+
+      <i>Note:
+      This only counts how many separated days you''ve opened the app, not game time'
+  - section: 2
+    var: 11
+    title: Total time spent <i>in the app</i>
+    suffix: 
+    infoText: If the app was open, it was keeping track!
+  - section: 2
+    var: 12
+    title: Total time spent <i>in game</i>
+    suffix: 
+    infoText: If you were in game, trying to complete a level, it was keeping track!
+  - section: 3
+    var: 15
+    title: Most levels played in a day
+    suffix: levels
+    infoText: This one is pretty self explanatory. This also includes levels you've
+      completed before
+  - section: 3
+    var: 13
+    title: Average completion time
+    suffix: 
+    infoText: The average amount of time it takes you to complete a level. <i>Don't
+      think about this too hard, some levels are really easy and some are really
+      hard</i>
+  - section: 3
+    var: 14
+    title: Quickest completion time
+    suffix: 
+    infoText: The fastest you've ever completed a level!
+  - section: 3
+    var: 16
+    title: Average number of actions
+    suffix: actions
+    infoText: 'The average number of actions taken to complete a level
+
+      <i>Note:
+      Don''t think too much about this number! Some levels are much bigger than others'
+  - section: 4
+    var: 17
+    title: Start date
+    suffix: 
+    infoText: The date you first launced the app
+  - section: 4
+    var: 18
+    title: Last played
+    suffix: 
+    infoText: The date you last played the game
+--- !u!114 &2496351846328909994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5988841794982233191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f0dcd2502d4ae143bc44663aef5b5e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allTextSizes: []
+--- !u!114 &5213454080815742772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5988841794982233191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0df6abd13d9d23344b5812c9f419aa48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sequence:
+  - name: Close menu
+    obj: {fileID: 0}
+    otherObjs: []
+    clickButton: 1
+    message: 
+  - name: Start
+    obj: {fileID: 0}
+    otherObjs: []
+    clickButton: 0
+    message: 'Welcome to Simply Sudoku!
+
+      Let''s take a tour of the app'
+  - name: Play
+    obj: {fileID: 0}
+    otherObjs: []
+    clickButton: 0
+    message: 'Click "Play" to select which level you want to play!
+
+      <i>There
+      are over 3500 custom-made levels for you to play!</i>'
+  - name: Click play button
+    obj: {fileID: 0}
+    otherObjs: []
+    clickButton: 1
+    message: 
+  - name: Play info
+    obj: {fileID: 0}
+    otherObjs:
+    - {fileID: 0}
+    - {fileID: 0}
+    clickButton: 0
+    message: "Here you select which type and difficulty you want to play.\n<i>\"Standard
+      Sudoku\" is the regular 9\xD79 \u2013 [3\xD73] sudoku"
+  - name: Close play menu
+    obj: {fileID: 0}
+    otherObjs: []
+    clickButton: 1
+    message: 
+  - name: Quickplay info
+    obj: {fileID: 0}
+    otherObjs: []
+    clickButton: 0
+    message: Click "Quickplay" to to play a random level <i>after choosing a board
+      type and difficulty!</i>
+  - name: Awards info
+    obj: {fileID: 0}
+    otherObjs: []
+    clickButton: 0
+    message: "Here you can see your player information and awards you've achieved.
+      \n<i>There are achievements for levels completed, days played in a row, and
+      more!</i>"
+  - name: Settings info
+    obj: {fileID: 0}
+    otherObjs: []
+    clickButton: 0
+    message: Here you can change lots of game settings like volume, themes, gameplay
+      options, accessibility, and more!
+  - name: Player info
+    obj: {fileID: 0}
+    otherObjs: []
+    clickButton: 0
+    message: This shows you information that has been tracked since you started playing,
+      such as total levels completed, total game actions, and more!
+  - name: Game info
+    obj: {fileID: 0}
+    otherObjs: []
+    clickButton: 0
+    message: Here you can find general information about the app <i>(such as credits)</i>
+      and other useful features
+  - name: End
+    obj: {fileID: 0}
+    otherObjs: []
+    clickButton: 0
+    message: 'Well, that''s about it!
+
+      I hope you enjoy, and thank you for
+      playing Simply Sudoku!'
+  SequenceCanvas: {fileID: 0}
+  easeCurve: 16
+  maskPaddingDivider: 35
+  moveTime: 1
+--- !u!114 &1464896279813000772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5988841794982233191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 208f289f5e37d0647b2b15f574f5c5f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  androidGameID: 5016819
+  iOSGameID: 5016818
+  showBannerAd: 0
+  levelsBeforeAd: 5
+--- !u!114 &6606261651615868904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5988841794982233191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f998a2c145b3ad4f9993fcb91ba7d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  purchaseDialogueCanvas: {fileID: 0}
+  lockedButtonPrefab: {fileID: 3517056392765767936, guid: fd33cead7076c5a4e86ba1ac3780e854, type: 3}
+  MakeUninteractable:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  infoPrefix: 'You will be unlocking:'
+  infoSuffix: This will give you
+  infoUnlockNameColor: 4
+  animationSpeedMultiplier: 0.75
+  tweenOnCurve: 27
+  tweenOffCurve: 26
+  menuIsOpen: 0
+  DEBUG_PurchaseButton: {fileID: 0}
+--- !u!114 &6665694811667999029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5988841794982233191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9475af9c61f55934c91ae9ab00c38d1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3011457850174132420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5988841794982233191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80989ffcf95818442829c5e462fab488, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UnlockableIDList:
+  - space_pack
+  - ocean_pack
+  - fall_pack
+  - holiday_pack_1
+  - holiday_pack_2
+  - coin_pack_1
+  - coin_pack_2
+  - coin_pack_3
+  - coin_pack_4
+  - coin_pack_5
+--- !u!114 &6878921149496071860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5988841794982233191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64a3f04d1fef25042905164a9e19ca34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShopCanvas: {fileID: 0}
+  ShopContent: {fileID: 0}
+  BuyablePrefab: {fileID: 3880153516211342016, guid: 9db8c54f54bba514d8d51ae8ba98f693, type: 3}
+  buyablePacks:
+  - name: Space Pack
+    info: Gets you the space/galaxy theme and backgrounds.
+    makePackInShop: 1
+    ID: space_pack
+    cost: 2
+    IAPs:
+    - name: Space
+      ID: space_theme
+    - name: Galaxies
+      ID: galaxies_background
+    - name: Space w/ No Objects
+      ID: space_background
+    isUnlocked: 0
+  - name: Ocean Pack
+    info: Gets you the deep ocean theme and backgrounds.
+    makePackInShop: 1
+    ID: ocean_pack
+    cost: 2
+    IAPs:
+    - name: Ocean
+      ID: ocean_theme
+    - name: Ocean
+      ID: ocean_background
+    isUnlocked: 0
+  - name: Holiday Pack
+    info: Gets you the winter/holiday and new years themes, fonts, and backgrounds
+    makePackInShop: 0
+    ID: holiday_pack_1
+    cost: 1
+    IAPs:
+    - name: Winter
+      ID: winter_theme
+    - name: Festive
+      ID: festive_font
+    isUnlocked: 0
+  - name: Holiday Pack 2
+    info: Gets you the valentines day and independence day themes and backgrounds
+    makePackInShop: 0
+    ID: holiday_pack_2
+    cost: 1
+    IAPs: []
+    isUnlocked: 0
+  - name: Fall Pack
+    info: Gets you the fall, spooky, and Dia de los Muertos themes, fonts, and backgrounds
+    makePackInShop: 0
+    ID: fall_pack
+    cost: 1
+    IAPs:
+    - name: Halloween
+      ID: spooky_theme
+    - name: Spooky
+      ID: spooky_font
+    isUnlocked: 0
+  coinPacks:
+  - name: 
+    info: For reference, hints cost 50 coins and most themes cost 1000 coins. And
+      winning a level gives 10 coins each!
+    ID: coin_pack_1
+    cost: 1
+    numCoins: 1000
+    isUnlocked: 0
+  - name: 
+    info: Buy a few fonts/themes/backgrounds! Finish a few levels easier with hints!
+    ID: coin_pack_2
+    cost: 2
+    numCoins: 2000
+    isUnlocked: 0
+  - name: 
+    info: Buy more than a few new themes and fonts and backgrounds! Heck, you could
+      even complete a whole level with just hints!
+    ID: coin_pack_3
+    cost: 3
+    numCoins: 5000
+    isUnlocked: 0
+  - name: This is a <i>lot</i> of coins
+    info: You can buy most things with this. Not everything, but you can save the
+      hassle of completing 750 levels worth of coins if you want!
+    ID: coin_pack_4
+    cost: 4
+    numCoins: 7500
+    isUnlocked: 0
+  - name: Please don't buy this
+    info: This is wayyy more coins than you need to buy everything in the game. It's
+      completely unnecessary, unless you just want to support me! <i>(Or for if I
+      add anything to the game later that requires coins)</i>
+    ID: coin_pack_5
+    cost: 5
+    numCoins: 50000
+    isUnlocked: 0
+  comingSoonPack:
+    name: More Coming Soon!
+    info: 'More themes, fonts, and backgrounds are in the works!
+
+      <i>Stay tuned!</i>'
+    makePackInShop: 1
+    ID: 
+    cost: 0
+    IAPs: []
+    isUnlocked: 0
+  widthMultiplier: 0.825
+  TopReference: {fileID: 0}
+  BottomReference: {fileID: 0}
+  MakeUninteractable:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  animationMultiplier: 0.85
+  easeInCurve: 27
+  easeOutCurve: 26
+--- !u!114 &3622548328282817403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5988841794982233191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 711e4d3edef8dad4cbbec5ed19dcfcec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
