@@ -19,7 +19,7 @@ public class AchievementManager : MonoBehaviour
     float titleSize;
     [SerializeField] float AchievementHeightDivider;
     float achievementHeight;
-    float descriptionTextSize = -1f;
+    //float descriptionTextSize = -1f;
 
     // Achievements
     [Space(10f)]

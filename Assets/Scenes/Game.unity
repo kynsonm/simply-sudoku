@@ -2726,11 +2726,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7347804430423944502, guid: b478f430d978ef64f9daae3266f3c63d, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1440
+      value: 1242
       objectReference: {fileID: 0}
     - target: {fileID: 7347804430423944502, guid: b478f430d978ef64f9daae3266f3c63d, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 3040
+      value: 2688
       objectReference: {fileID: 0}
     - target: {fileID: 7347804430423944502, guid: b478f430d978ef64f9daae3266f3c63d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3216,8 +3216,8 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 212
-    m_Bottom: 152
+    m_Top: 188
+    m_Bottom: 134
   m_ChildAlignment: 0
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
@@ -6009,8 +6009,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 57
-    m_Right: 57
+    m_Left: 49
+    m_Right: 49
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 4
@@ -6756,10 +6756,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 28
-    m_Right: 28
-    m_Top: 15
-    m_Bottom: 15
+    m_Left: 24
+    m_Right: 24
+    m_Top: 13
+    m_Bottom: 13
   m_ChildAlignment: 0
   m_Spacing: 0
   m_ChildForceExpandWidth: 1
@@ -7094,12 +7094,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 64
-    m_Right: 64
+    m_Left: 55
+    m_Right: 55
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 7.2
+  m_Spacing: 6.21
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
@@ -12232,10 +12232,10 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 9
+    m_Top: 8
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 16.941177
+  m_Spacing: 14.611765
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
@@ -13040,12 +13040,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:
-    m_Left: 28
-    m_Right: 28
+    m_Left: 24
+    m_Right: 24
     m_Top: 0
-    m_Bottom: 15
+    m_Bottom: 13
   m_ChildAlignment: 0
-  m_Spacing: 9.6
+  m_Spacing: 8.28
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
@@ -15085,7 +15085,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 126.05
+  m_fontSize: 108.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -20462,7 +20462,6 @@ GameObject:
   - component: {fileID: 2055966474}
   - component: {fileID: 2055966473}
   - component: {fileID: 2055966472}
-  - component: {fileID: 2055966471}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -20470,18 +20469,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2055966471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2055966470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!81 &2055966472
 AudioListener:
   m_ObjectHideFlags: 0

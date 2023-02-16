@@ -134,14 +134,11 @@ public class ShopMenu : MonoBehaviour
 
 
     // ----- MONOBEHAVIOUR STUFF -----
-    bool isStarting = false;
     // Start is called before the first frame update
     IEnumerator Start()
     {
-        isStarting = true;
         if (!GetObjects()) {
             Debug.Log("ShopMenu: GET OBJECTS IS BAD");
-            isStarting = false;
             yield break;
         }
         ShopCanvas.gameObject.SetActive(true);
@@ -156,7 +153,6 @@ public class ShopMenu : MonoBehaviour
         ShopCanvas.gameObject.SetActive(false);
         yield return new WaitForSeconds(0.5f);
         CreateObjects();
-        isStarting = false;
     }
     // ----- end monobehaviour stuff -----
 
