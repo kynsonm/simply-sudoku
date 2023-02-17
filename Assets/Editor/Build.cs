@@ -44,6 +44,18 @@ public class BL_BuildPostProcess
             }
 
 
+            // ----- SOLUTION 4
+            target = proj.TargetGuidByName("Pods-Unity-iPhone");
+            proj.SetBuildProperty(target, "ENABLE_BITCODE", "false");
+
+
+            // ----- SOLUTION 5
+            target = proj.TargetGuidByName("GoogleAppMeasurement");
+            proj.SetBuildProperty(target, "ENABLE_BITCODE", "false");
+            target = proj.TargetGuidByName("XCFrameworkIntermediates");
+            proj.SetBuildProperty(target, "ENABLE_BITCODE", "false");
+
+
             File.WriteAllText(projPath, proj.WriteToString());
             
             
