@@ -19,10 +19,31 @@ public class BL_BuildPostProcess
             PBXProject proj = new PBXProject();
             proj.ReadFromString(File.ReadAllText(projPath));
             
+            // ----- SOLUTION 1
             string target = proj.TargetGuidByName("Unity-iPhone");
-            
             proj.SetBuildProperty(target, "ENABLE_BITCODE", "false");
-            
+
+
+            // ----- SOLUTION 2
+            // Main
+            target = proj.GetUnityMainTargetGuid();
+            proj.SetBuildProperty(target, "ENABLE_BITCODE", "NO");
+            // Unity Tests
+            target = proj.TargetGuidByName(PBXProject.GetUnityTestTargetName());
+            proj.SetBuildProperty(target, "ENABLE_BITCODE", "NO");
+            // Unity Framework
+            target = proj.GetUnityFrameworkTargetGuid();
+            proj.SetBuildProperty(target, "ENABLE_BITCODE", "NO");
+
+
+            // ----- SOLUTION 3
+            var mainTargetGuid = proj.GetUnityMainTargetGuid();
+            foreach (var targetGuid in new[] {mainTargetGuid, proj.GetUnityFrameworkTargetGuid()})
+            {
+                proj.SetBuildProperty(targetGuid, "ENABLE_BITCODE", "NO");
+            }
+
+
             File.WriteAllText(projPath, proj.WriteToString());
             
             
