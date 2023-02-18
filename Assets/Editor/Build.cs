@@ -56,6 +56,15 @@ public class BL_BuildPostProcess
             proj.SetBuildProperty(target, "ENABLE_BITCODE", "false");
 
 
+            // ----- SOLUTION 6
+            target = proj.GetUnityMainTargetGuid();
+            proj.SetBuildProperty(target, "ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES", "YES");
+            target = proj.GetUnityFrameworkTargetGuid();
+            proj.SetBuildProperty(target, "ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES", "YES");
+            target = proj.TargetGuidByName("Pods-Unity-iPhone");
+            proj.SetBuildProperty(target, "ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES", "YES");
+
+
             File.WriteAllText(projPath, proj.WriteToString());
             
             
