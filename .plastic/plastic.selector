@@ -1,0 +1,4 @@
+repository "Simply Sudoku@Kynson@cloud"
+  path "/"
+    br "/main"
+    co "/main"

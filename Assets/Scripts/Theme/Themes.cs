@@ -254,6 +254,13 @@ public class Themes : MonoBehaviour
         UpdateFont();
         UpdateBackground();
     }
+#if UNITY_EDITOR
+    void Update() {
+        if (!Application.isPlaying) {
+            UpdateTheme();
+        }
+    }
+#endif
 
 
     // Change the theme given a new index
