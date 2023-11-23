@@ -66,7 +66,7 @@ Hey! Its not messy! Well, not _super_ messy anyway. I tried to write neatly, com
 
 #### I don't speak English (disregard the irony) and want to play this in [_insert language here_]. Will you do that?
 
-I really do want to make a localization system, but that will take a ton of time to implement a system that translates all of my mortal text with their translations. It wasn't something I had in mind when I started the project and I need just need to do it! If anybody wants to help me with the actual translations, let me know!!
+I really do want to make a localization system, but that will take a ton of time to implement a system that translates all of my mortal text with their translations. It wasn't something I had in mind when I started the project, but I just need to do it! Also, if anybody wants to help me with the actual translations, let me know!!
 ## Feedback
 
 If you have any feedback, please reach out to us at kynsonmitchell@gmail.com or simply.sudoku.help@gmail.com
